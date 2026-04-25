@@ -1,0 +1,19 @@
+Volume: proxmox_hdexterno
+Repository: nas326
+Schedule: hdexterno
+Overview:
+- Data added: 20.5 MiB
+- Data stored: 7.31 MiB
+- Total files processed: 40,398
+- Total bytes processed: 85.2 GiB
+Backup Statistics:
+- Files new: 29
+- Files changed: 69
+- Files unmodified: 40,300
+- Dirs new: 9
+- Dirs changed: 87
+- Dirs unmodified: 17,391
+- Data blobs: 78
+- Tree blobs: 91
+- Total duration: 1m 20s
+- Snapshot: 05113e2a577b38593bfc636b073bff10333104411a2a719ed30ed4deffa1a434
