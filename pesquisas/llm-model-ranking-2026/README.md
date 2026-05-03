@@ -9,15 +9,16 @@ Pesquisa comparativa de modelos LLM open weights e gratuitos, com benchmarks bas
 
 ## Modelos Avaliados
 
-| Modelo | Provider | Tipo |
-|--------|----------|------|
-| gemma-4-26b | Google | Reasoning + Multimodal |
-| kimi-k2.5 | Moonshot / Kimi | Reasoning + Multimodal |
-| minimax-m2.5-free | MiniMax | Reasoning |
-| nvidia/nemotron-3-super-120b-a12b | NVIDIA | Reasoning (free tier) |
-| glm-4.7 | Zhipu AI | Reasoning |
-| mistral-small-4 | Mistral | Non-reasoning + Vision |
-| command-a | Cohere | Non-reasoning |
+| # | Modelo | Provider | Tipo |
+|---|--------|----------|------|
+| 1 | gemma-4-26b | Google | Open Weights / Reasoning + Multimodal |
+| 2 | kimi-k2.5 | Moonshot / Kimi | Open Weights / Reasoning + Multimodal |
+| 3 | minimax-m2.5-free | MiniMax | Open Weights / Reasoning |
+| 4 | nvidia/nemotron-3-super-120b-a12b | NVIDIA | Open Weights / Reasoning (free) |
+| 5 | glm-4.7 | Zhipu AI | Open Weights / Reasoning |
+| 6 | mistral-small-4 | Mistral | Open Weights / Non-reasoning + Vision |
+| 7 | command-a | Cohere | Open Weights / Non-reasoning |
+| + | claude-sonnet-4.5 | Anthropic | Proprietary / Reasoning + Non-reasoning |
 
 ## Métricas Principais
 

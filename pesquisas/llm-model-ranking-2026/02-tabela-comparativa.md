@@ -6,8 +6,8 @@
 
 ## Especificações Técnicas
 
-| Modelo | Provider | Parâmetros (Ativos/Total) | Contexto | Multimodal | Reasoning | Lançamento |
-|--------|----------|---------------------------|----------|------------|-----------|------------|
+| Modelo | Provider | Parâmetros | Contexto | Multimodal | Reasoning | Lançamento |
+|--------|----------|-----------|----------|------------|-----------|------------|
 | gemma-4-26b | Google | 3.8B / 25.2B (MoE) | 256k | ✅ img+vídeo | ✅ | Abr 2026 |
 | kimi-k2.5 | Moonshot | 32B / 1T (MoE) | 256k | ✅ img+vídeo | ✅ | Jan 2026 |
 | minimax-m2.5 | MiniMax | 10B / 230B (MoE) | 205k | ❌ | ✅ | Fev 2026 |
@@ -15,20 +15,22 @@
 | glm-4.7 | Zhipu AI | 32B / 357B (MoE) | 200k+128k | ❌ | ✅ | Dez 2025 |
 | mistral-small-4 | Mistral | ~17B / 119B (MoE) | 262k | ✅ vision | ❌ | Mar 2026 |
 | command-a | Cohere | 111B | 256k | ❌ | ❌ | Mar 2025 |
+| **claude-sonnet-4.5** | **Anthropic** | **Proprietary** | **1M** | **✅ img** | **✅/❌** | **Set 2025** |
 
 ---
 
 ## Performance
 
-| Modelo | Intelligence Index | Arena Chat | Arena Coding | Arena Vision |
-|--------|-------------------|------------|--------------|--------------|
-| gemma-4-26b | **57/60** ⭐ | #98 | — | #56 |
-| kimi-k2.5 | 47/60 | — | — | #75 (MMMU-Pro) |
-| minimax-m2.5 | 47/60 | — | #12 (SWE) | — |
-| nemotron-3-super | ? | **#3** | #83 | #62 |
-| glm-4.7 | 42/60 | — | **73.8%** (SWE-bench) | — |
-| mistral-small-4 | N/A* | — | ~37% | — |
-| command-a | 13/30 | — | — | — |
+| Modelo | Intelligence Index | Arena Chat | Arena Coding | SWE-bench | Notes |
+|--------|-------------------|------------|--------------|-----------|-------|
+| gemma-4-26b | **57/60** ⭐ | #98 | — | 0.77 (#19) | |
+| kimi-k2.5 | 47/60 | — | — | ~51% | GDPval-AA Elo 1309 |
+| minimax-m2.5 | 47/60 | — | #12 | 51.3% | |
+| nemotron-3-super | ? | **#3** | #83 | 53.7% | |
+| glm-4.7 | 42/60 | — | — | **73.8%** | |
+| mistral-small-4 | N/A* | — | ~37% | — | |
+| command-a | 13/30 | — | — | — | |
+| **claude-sonnet-4.5** | 37–43/60 | — | — | **77.2%** | **SOTA coding** |
 
 *Non-reasoning — métrica não comparável*
 
@@ -59,6 +61,7 @@
 | glm-4.7 | 93 | $0.60 | $2.20 | $0.45 | ~$1.00 | ❌ |
 | mistral-small-4 | 149 | $0.15 | $0.60 | $0.15 | **$0.26** | ❌ |
 | command-a | 39 | **$2.50** | **$10.00** | — | $4.38 | ❌ |
+| **claude-sonnet-4.5** | 42–47 | **$3.75** | **$15.00** | $0.30 | **$6.56** | ❌ |
 
 ---
 
@@ -73,6 +76,7 @@
 | glm-4.7 | MIT | ✅ | ✅ | ✅ | ❌ |
 | mistral-small-4 | Open Weights | ✅ | ✅ | ✅ | ❌ |
 | command-a | CC-BY-NC 4.0 | ❌ | ✅ | ✅ | ❌ |
+| **claude-sonnet-4.5** | **Proprietary** | ❌ | ❌ | ❌ | ❌ |
 
 ---
 
@@ -87,6 +91,7 @@
 | glm-4.7 | Coding agentic, código multilíngue, output longo | Tarefas multimodais |
 | mistral-small-4 | Tarefas simples, alto volume, multimodal | Raciocínio complexo |
 | command-a | Experimentação pessoal | Produção, qualquer uso comercial |
+| **claude-sonnet-4.5** | **Coding SOTA, computer use, referência premium** | **Budget limitado, self-hosting** |
 
 ---
 
@@ -96,9 +101,13 @@
 Destaque     gemma-4-26b                    ████████████████████████████ 57/60
 Top Open     kimi-k2.5 / minimax-m2.5       ████████████████████████░░░░ 47/60
 Bom          glm-4.7                        ██████████████████░░░░░░░░░ 42/60
+Proprietário claude-sonnet-4.5 (reasoning)  █████████████████░░░░░░░░░ 43/60
+Proprietário claude-sonnet-4.5 (non-reasoning) █████████████░░░░░░░░░░░ 37/60
 N/A*         mistral-small-4                — (não comparável)
 Baixo        command-a                      ██████████░░░░░░░░░░░░░░░░░░ 13/30
 ```
+
+> ⭐ gemma-4-26b (open weights) supera em Intelligence Index até o Claude Sonnet 4.5 reasoning (proprietário)!
 
 ---
 
@@ -108,9 +117,11 @@ Baixo        command-a                      ██████████░░
 Precisa multimodal?
 ├─ SIM → gemma-4-26b (custo) vs kimi-k2.5 (agentes)
 └─ NÃO
+   ├─ Precisa de CODING premium (SOTA)?
+   │  └─ SIM → claude-sonnet-4.5 (77.2% SWE-bench, computer use)
    ├─ Precisa de contexto EXTREMO (>200k tokens)?
    │  └─ SIM → nemotron-3-super (FREE, 1M, 218 t/s)
-   ├─ Precisa de coding melhor?
+   ├─ Precisa de coding open weights?
    │  └─ SIM → glm-4.7 (73.8% SWE-bench)
    ├─ Prioridade é preço?
    │  └─ SIM → minimax-m2.5 (FREE tier, $0.52 blended)

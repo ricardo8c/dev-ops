@@ -281,6 +281,94 @@
 
 ---
 
+## ★ — claude-sonnet-4.5 (Anthropic)
+
+**Destaque:** Proprietário premium. Melhor coding do mundo (77.2% SWE-bench). Líder em computer use.
+
+Claude Sonnet 4.5 possui **duas variantes** — Non-reasoning e Reasoning — ambas com multimodalidade e 1M de contexto.
+
+### Variante Non-Reasoning
+
+| Métrica | Valor |
+|---|---|
+| **Intelligence Index** | **37 / 60** (non-reasoning proprietary) |
+| Arena | #14 among 70 models (well above average of 24) |
+| Tipo | Non-reasoning + Multimodal (img) |
+| Contexto | **1M tokens** |
+| Velocidade | 47 t/s |
+| Custo | Input **$3.75** / Output **$15.00** / Cache $0.30/1M |
+| Blended | **$6.56/1M** (88% acima da média) |
+| Latência TTFT | 1.12s (#4 mais rápido!) |
+| Lançamento | 29/Set/2025 |
+
+### Variante Reasoning (Thinking)
+
+| Métrica | Valor |
+|---|---|
+| **Intelligence Index** | **43 / 60** |
+| Competitors | Abaixo de GPT-5.5 (60), Opus 4.7 (57) |
+| Tipo | Reasoning + Multimodal (img) |
+| Contexto | **1M tokens** |
+| Velocidade | 42.4 t/s (36% abaixo da mediana) |
+| Custo | Input $3.75 / Output $15.00 / Cache $0.30/1M |
+| Lançamento | 29/Set/2025 |
+
+### Benchmarks Claimed (Anthropic)
+
+| Benchmark | Score | Obs |
+|---|---|---|
+| SWE-bench Verified | **77.2%** | State-of-the-art |
+| SWE-bench High Compute | 82.0% | Multiple attempts |
+| OSWorld (computer use) | **61.4%** | Líder (+19.2pp vs 4.1) |
+| MMLU | 89.2% | |
+| Code Generation | 92.7% | |
+
+### Posicionamento no Ranking
+
+> **Importante:** Claude Sonnet 4.5 é **proprietário** — não competes diretamente com os modelos open weights do ranking. Ele está posicionado como referência de mercado.
+
+| Métrica | Claude Sonnet 4.5 | Mejor Open Weights |
+|---|---|---|
+| Intelligence | 37–43/60 | gemma-4-26b: 57/60 |
+| SWE-bench | 77.2% (SOTA) | glm-4.7: 73.8% |
+| Computer Use | 61.4% (SOTA) | — (não disponível em open) |
+| Contexto | 1M tokens | nemotron: 1M tokens |
+| Custo | $6.56/1M blended | $0.20–1.00/1M |
+
+### Pontos Fortes
+- **SWE-bench 77.2%** — melhor coding do mundo
+- **OSWorld 61.4%** — líder em computer use (usar PCs como humanos)
+- **92% cache discount** ($0.30/1M com cache hit)
+- TTFT 1.12s — latência muito baixa
+- 1M tokens de contexto
+- Multimodal (imagem)
+- Suporte robusto a agentes (Claude Code, Agent SDK)
+
+### Pontos Fracos
+- **Proprietário** — sem acesso a weights
+- Caro ($6.56/1M blended — 6x mais que gemma-4-26b)
+- Lento em output (47 t/s non-reasoning, 42.4 reasoning)
+- Sem suporte a imagens na versão reasoning (apenas non-reasoning)
+- CC-BY-NC (não comercial para command-a)
+
+### Quando usar
+- Coding de alta complexidade (77.2% SWE-bench)
+- Agentes que usam computadores (computer use)
+- Tarefas que exigem contexto de 1M tokens
+- Benchmark de referência para evaluation
+- Quando custo não é restrição
+
+### Nota sobre Competição
+Na classe **proprietary reasoning**, Claude Sonnet 4.5 (43/60) compete com:
+- GPT-5.5 (60) — líder
+- Claude Opus 4.7 (57)
+- Gemini 3.1 Pro (57)
+- Kimi K2.6 (54)
+
+Na classe **open weights reasoning**, o líder é gemma-4-26b (57/60) — superando até Claude Sonnet 4.5 reasoning.
+
+---
+
 ## Resumo Comparativo
 
 | # | Modelo | Índice | Velocidade | Custo (blended) | Multimodal | Free |
@@ -292,6 +380,7 @@
 | 5 | glm-4.7 | 42/60 | 93 t/s | ~$1.00 | ❌ | ❌ |
 | 6 | mistral-small-4 | N/A* | 149 t/s | **$0.26** | ✅ | ❌ |
 | 7 | command-a | 13/30 | 39 t/s | $4.38 | ❌ | ❌ |
+| ★ | claude-sonnet-4.5 | 37–43/60 | 42–47 t/s | $6.56 | ✅ | ❌ |
 
 ---
 
@@ -317,9 +406,10 @@
 2. minimax-m2.5 (119 t/s, 47 de índice)
 
 ### 🎨 Melhor Coding
-1. glm-4.7 (73.8% SWE-bench)
-2. kimi-k2.5
-3. minimax-m2.5
+1. **claude-sonnet-4.5** (77.2% SWE-bench — SOTA)
+2. glm-4.7 (73.8% SWE-bench)
+3. kimi-k2.5
+4. minimax-m2.5
 
 ### 🧠 Melhor Agentic
 1. kimi-k2.5 (Elo 1309, 66% vs GLM)
@@ -334,4 +424,5 @@
 ### 🖼️ Melhor Multimodal
 1. kimi-k2.5 (img + vídeo)
 2. gemma-4-26b (img + vídeo)
-3. mistral-small-4 (vision)
+3. claude-sonnet-4.5 (img, non-reasoning only)
+4. mistral-small-4 (vision)
