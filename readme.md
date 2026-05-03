@@ -4,6 +4,12 @@ Repositório de pesquisa e documentação para projetos DevOps.
 
 ## Pesquisas
 
+### Ranking Modelos LLM — 2026
+Comparativo de modelos open weights com benchmarks do Artificial Analysis Intelligence Index.
+- [README](pesquisas/llm-model-ranking-2026/README.md)
+- [Ranking Completo](pesquisas/llm-model-ranking-2026/01-ranking-completo.md)
+- [Tabela Comparativa](pesquisas/llm-model-ranking-2026/02-tabela-comparativa.md)
+
 ### Design Clínicas de Estética
 Pesquisa sobre design, tendências e funcionalidades para clínicas de estética.
 - [Exemplos Inspiradores](pesquisas/design-clinicas-estetica/01-exemplos-inspiradores.md)
