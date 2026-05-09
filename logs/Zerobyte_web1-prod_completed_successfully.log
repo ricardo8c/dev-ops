@@ -8,12 +8,12 @@ Overview:
 - Total bytes processed: 349 MiB
 Backup Statistics:
 - Files new: 0
-- Files changed: 6
-- Files unmodified: 4,732
+- Files changed: 14
+- Files unmodified: 4,724
 - Dirs new: 0
-- Dirs changed: 16
-- Dirs unmodified: 348
+- Dirs changed: 21
+- Dirs unmodified: 343
 - Data blobs: 36
-- Tree blobs: 16
+- Tree blobs: 21
 - Total duration: 9s
-- Snapshot: b6192e415804d40fc0987bdd4c5a456bba3464543ceaab523ae966886c78a488
+- Snapshot: 9eafb151a2ba33207c3bbcff0b17815f8abcf887e6ff25b0e455c13576114e8d
