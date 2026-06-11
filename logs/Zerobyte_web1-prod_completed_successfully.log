@@ -2,18 +2,18 @@ Volume: web1-local
 Repository: backblaze
 Schedule: web1-prod
 Overview:
-- Data added: 19.3 MiB
-- Data stored: 1.8 MiB
+- Data added: 18.4 MiB
+- Data stored: 1.69 MiB
 - Total files processed: 4,808
 - Total bytes processed: 354 MiB
 Backup Statistics:
-- Files new: 1
-- Files changed: 5
-- Files unmodified: 4,802
-- Dirs new: 1
-- Dirs changed: 15
-- Dirs unmodified: 408
-- Data blobs: 42
-- Tree blobs: 16
-- Total duration: 11s
-- Snapshot: 762c77826e0ca308253e583d3dd9f2bfe613209797b873d62a5feae11d544649
+- Files new: 0
+- Files changed: 3
+- Files unmodified: 4,805
+- Dirs new: 0
+- Dirs changed: 9
+- Dirs unmodified: 415
+- Data blobs: 38
+- Tree blobs: 9
+- Total duration: 10s
+- Snapshot: 22864169fc09f8a30922a2fef79afe404285e651409de28a7181a8a21d7a9208
