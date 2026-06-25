@@ -2,18 +2,18 @@ Volume: web1-local
 Repository: backblaze
 Schedule: web1-docker-volumes
 Overview:
-- Data added: 379 MiB
-- Data stored: 64.9 MiB
-- Total files processed: 31,262
-- Total bytes processed: 5.04 GiB
+- Data added: 409 MiB
+- Data stored: 66.6 MiB
+- Total files processed: 31,263
+- Total bytes processed: 5.06 GiB
 Backup Statistics:
-- Files new: 55
-- Files changed: 124
-- Files unmodified: 31,083
-- Dirs new: 19
-- Dirs changed: 144
-- Dirs unmodified: 9,261
-- Data blobs: 649
-- Tree blobs: 150
-- Total duration: 18s
-- Snapshot: 6df4de45d909223593339111a0957916f80ae422ebe88a8bebd75051c3ae4e58
+- Files new: 53
+- Files changed: 120
+- Files unmodified: 31,090
+- Dirs new: 20
+- Dirs changed: 152
+- Dirs unmodified: 9,256
+- Data blobs: 701
+- Tree blobs: 145
+- Total duration: 19m 9s
+- Snapshot: 41fc48f50adfb90e81281448b49a161017d6aaa0f61196caf773f471c9f006ad
