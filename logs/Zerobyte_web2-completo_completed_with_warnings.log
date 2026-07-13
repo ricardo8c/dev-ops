@@ -2,8 +2,8 @@ Volume: web2
 Repository: idrivee2-kl
 Schedule: web2-completo
 Overview:
-- Data added: 34.2 MiB
-- Data stored: 3.36 MiB
+- Data added: 37.2 MiB
+- Data stored: 3.66 MiB
 - Total files processed: 30
 - Total bytes processed: 394 MiB
 Backup Statistics:
@@ -13,7 +13,7 @@ Backup Statistics:
 - Dirs new: 0
 - Dirs changed: 11
 - Dirs unmodified: 38
-- Data blobs: 68
+- Data blobs: 74
 - Tree blobs: 12
 - Total duration: 6s
-- Snapshot: c2f4ac8421fb9126e11eed5e1788a946a38a03aacb90b19f56d88c4a68e1adcb
+- Snapshot: 22f5ae57e153210a5b986e153a0e6cc8820c95555ee159be64ab6cec21d8702d
