@@ -2,8 +2,8 @@ Volume: web1-local
 Repository: idrivee2-kl
 Schedule: web1-bkp-databases
 Overview:
-- Data added: 15.8 MiB
-- Data stored: 2.32 MiB
+- Data added: 14.4 MiB
+- Data stored: 1.98 MiB
 - Total files processed: 4
 - Total bytes processed: 513 MiB
 Backup Statistics:
@@ -13,7 +13,7 @@ Backup Statistics:
 - Dirs new: 0
 - Dirs changed: 3
 - Dirs unmodified: 0
-- Data blobs: 10
+- Data blobs: 9
 - Tree blobs: 4
 - Total duration: 4s
-- Snapshot: 4ec2d41593a19d5544af03a5ff5aeb5c3d9c8aa14e5596985518b0112fb03d74
+- Snapshot: 10f5df5121546f1e75492e507dbaae0b2fc6d889005f621fd250b5c9031505eb
