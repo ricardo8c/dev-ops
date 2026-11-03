@@ -5,15 +5,15 @@ Overview:
 - Data added: 528 MiB
 - Data stored: 105 MiB
 - Total files processed: 23,433
-- Total bytes processed: 3.06 GiB
+- Total bytes processed: 3.07 GiB
 Backup Statistics:
-- Files new: 30
-- Files changed: 118
-- Files unmodified: 23,285
-- Dirs new: 19
-- Dirs changed: 140
-- Dirs unmodified: 5,900
-- Data blobs: 771
-- Tree blobs: 130
-- Total duration: 18s
-- Snapshot: b5081845143a3e153fe41d3b2ab6ab2a5ffd71fe5abec730763c9d18ae7cf114
+- Files new: 29
+- Files changed: 121
+- Files unmodified: 23,283
+- Dirs new: 14
+- Dirs changed: 138
+- Dirs unmodified: 5,905
+- Data blobs: 778
+- Tree blobs: 131
+- Total duration: 19s
+- Snapshot: 69271054a9d383a7d082ffd8c4c93bf7ea789f7fce955e289bfc5bdac673ef24
