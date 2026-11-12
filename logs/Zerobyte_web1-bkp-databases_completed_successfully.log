@@ -15,5 +15,5 @@ Backup Statistics:
 - Dirs unmodified: 0
 - Data blobs: 10
 - Tree blobs: 4
-- Total duration: 5s
-- Snapshot: 269a9bda8a2022dbe50c4c0ea9e99072196baa8c936264187a0a807d8f73560d
+- Total duration: 7s
+- Snapshot: 9755d5225b66184db366df5eb319b02c6e2928b0a02b0403f1ebf527237f3712
